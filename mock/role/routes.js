@@ -519,6 +519,15 @@ const asyncRoutes = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
+  {
+    path: '在线demo',
+    component: 'layout/Layout',
+    children: [
+      {
+        path: 'https://panjiachen.github.io/vue-element-admin/#/dashboard',
+        meta: { title: '在线demo', icon: 'link' }
+      }
+    ]
   },
 
   { path: '*', redirect: '/404', hidden: true }

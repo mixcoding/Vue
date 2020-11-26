@@ -3,6 +3,7 @@
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside" />
     <sidebar class="sidebar-container" />
     <div :class="{hasTagsView:needTagsView}" class="main-container">
+      <a href="https://panjiachen.github.io/vue-element-admin/#/components/count-to">在线demo</a>
       <div :class="{'fixed-header':fixedHeader}">
         <navbar />
         <tags-view v-if="needTagsView" />
@@ -11,6 +12,7 @@
       <right-panel v-if="showSettings">
         <settings />
       </right-panel>
+
     </div>
   </div>
 </template>
